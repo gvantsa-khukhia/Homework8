@@ -1,0 +1,130 @@
+.mainbox{
+    max-width: 1440px;
+    width: 100%;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    border: 1px solid black;
+    box-shadow: inset 7px 7px 15px black;
+
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+li{
+    transition: all 1s;
+}
+
+li:hover{
+    background-color: chartreuse;
+}
+
+/* box */
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    background-color: rgb(12, 82, 12);
+    box-shadow: 10px 15px red;
+    transition: all 2s;
+}
+
+.box:hover{
+    transform: scale(2);
+    box-shadow: 10px 15px 10px red;
+}
+
+/* circle */
+
+.circle{
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    border-radius: 50%;
+    background-color: yellow;
+    animation: circle 4s forwards;
+}
+
+@keyframes circle{
+    form{ opacity: 100%;}
+    to{opacity: 0%;}
+
+}   
+
+/* text */
+
+.text{
+    font-size: 20px;
+    animation: text 10s forwards;
+}
+
+@keyframes text{
+    form{font-size: 20px;}
+    to{font-size: 10px;}
+}
+
+/* image */
+
+.vinyl{
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    margin-left: 550px;
+    animation: vinyl 2s linear infinite;
+}
+
+@keyframes vinyl{
+    form{ rotate: 0deg;}
+    to{
+        rotate: 360deg;
+    }
+}
+
+/* loading */
+
+.loading{
+    width: 800px;
+    height: 50px;
+    /* margin: 200px auto; */
+    border: 1px solid rgb(36, 2, 2);
+    border-radius: 50px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.loading_text{
+    color: black;
+}
+
+.loading2{
+    width: 1px;
+    height: 50px;
+    /* margin: 200px auto; */
+    position: absolute;
+    background-color: red;
+    border-radius: 50px;
+    animation: loading1 5s linear forwards;
+    
+
+}
+
+@keyframes loading1{
+    from{opacity: 0; 
+    width: 0;
+    }
+    to{
+        opacity: 1;
+        width: 800px;
+    }
+}
